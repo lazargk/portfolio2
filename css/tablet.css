@@ -1,7 +1,12 @@
 @media (max-width: 768px) {
+
   .container {
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  .header {
+    padding-bottom: 152px;
   }
 
   .header-menu {
@@ -13,6 +18,10 @@
     display: none;
   }
 
+  .lang-slash {
+    margin: 0 9px;
+  }
+
   .menu-humburger.menu-hum__unvisited {
     display: flex;
     justify-content: space-evenly;
@@ -21,7 +30,6 @@
 
   .menu-humburger.menu-hum__visited .menu-hum__line {
     position: absolute;
-
     top: 50%;
   }
 
@@ -39,5 +47,33 @@
 
   .menu-hum__visited .menu-hum__line-3 {
     transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .header-text {
+    /* max-width: 500px; */
+    /* height: 330px; */
+    margin-top: 78px;
+    margin-left: 0;
+  }
+
+  .header-text__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 64px;
+  }
+
+  .header-text__sub {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-top: 20px;
+    max-width: 390px;
+  }
+
+  .header-text__btn {
+    margin-top: 60px;
   }
 }
