@@ -3,6 +3,8 @@
   .container {
     padding-left: 60px;
     padding-right: 60px;
+
+    overflow: hidden;
   }
 
   .header {
@@ -11,22 +13,63 @@
 
   .header-menu {
     width: 155px;
-    justify-content: space-between;
+    justify-content: space-between;    
   }
 
   .header-menu .menu {
-    display: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 134px;
+    padding-left: 127px;
+    width: 620px;
+    height: 100vh;
+
+    z-index: 10;
+
+    /* visibility: visible; */
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    background-color: var(--color-bg-dark);
+    
+    transition: all 1s;
   }
+
+  .header-menu .menu .menu-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    color: var(--color-white);
+
+    font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 73px;
+  }
+
+  .header-menu .menu.menu-hidden {
+    right: -620px;
+    /* display: none; */
+    /* visibility: hidden; */
+  }
+
+  
 
   .lang-slash {
     margin: 0 9px;
   }
 
-  .menu-humburger.menu-hum__unvisited {
+  .menu-humburger {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-  }
+  } 
 
   .menu-humburger.menu-hum__visited .menu-hum__line {
     position: absolute;
