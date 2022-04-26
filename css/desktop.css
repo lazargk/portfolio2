@@ -103,6 +103,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  
 }
 
 .skill-item {
@@ -150,21 +151,21 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 895px;
-  height: 55px;
+  height: auto;
 
   list-style: none;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 5px;
 
   color: var(--color-gold);
 }
 
 .portfolio-btns__item {
   width: 220px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 55px;
 
   border: 2px solid var(--color-gold);
 }
@@ -188,24 +189,20 @@
 }
 
 .portfolio-photos {
-  margin-top: 40px;
+  margin-top: 60px;
 
   list-style: none;
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 25px;
 }
 
 .portfolio-photo__item {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 25px;
-
   max-width: 450px;
   max-height: 560px;
-
 }
 
 .portfolio-photo__item-img {
@@ -241,8 +238,9 @@
   list-style: none;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 25px;
 }
 
 .price-item {

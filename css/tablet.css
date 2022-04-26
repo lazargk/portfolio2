@@ -1,19 +1,22 @@
 @media (max-width: 768px) {
-
   .container {
     padding-left: 60px;
     padding-right: 60px;
 
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .header {
     padding-bottom: 152px;
+
+    position: relative;
+
+    overflow: hidden;
   }
 
   .header-menu {
     width: 155px;
-    justify-content: space-between;    
+    justify-content: space-between;
   }
 
   .header-menu .menu {
@@ -24,16 +27,16 @@
     width: 620px;
     height: 100vh;
 
-    z-index: 10;
+    z-index: 1;
 
     /* visibility: visible; */
 
     position: absolute;
     top: 0;
     right: 0;
-    
+
     background-color: var(--color-bg-dark);
-    
+
     transition: all 1s;
   }
 
@@ -48,9 +51,9 @@
     color: var(--color-white);
 
     font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 73px;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 73px;
   }
 
   .header-menu .menu.menu-hidden {
@@ -58,8 +61,6 @@ line-height: 73px;
     /* display: none; */
     /* visibility: hidden; */
   }
-
-  
 
   .lang-slash {
     margin: 0 9px;
@@ -69,7 +70,12 @@ line-height: 73px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-  } 
+
+    position: absolute;
+    top: 20px;
+    right: 54px;
+    z-index: 2;
+  }
 
   .menu-humburger.menu-hum__visited .menu-hum__line {
     position: absolute;
@@ -118,5 +124,81 @@ line-height: 73px;
 
   .header-text__btn {
     margin-top: 60px;
+  }
+
+  .skills-list {
+    row-gap: 36px;
+  }
+
+  .skill-item {
+    max-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .skill-item__title {
+    margin-top: 30px;
+  }
+
+  .skill-item__text {
+    line-height: 22px;
+  }
+
+  .black-section {
+    padding-top: 80px;
+  }
+
+  .section-title {
+    margin-bottom: 50px;
+    max-width: 368px;
+  }
+
+  .portfolio-btns__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .video .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .video-player {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .price {
+    padding-bottom: 80px;
+  }
+
+  .contacts {
+    padding-bottom: 111px;
+    height: auto;
+  }
+
+  .contacts .container {
+    /* height: auto; */
+    padding: 0;
+  }
+
+  .contacts-form {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .contacts-form__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 64px;
   }
 }
