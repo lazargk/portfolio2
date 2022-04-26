@@ -9,17 +9,19 @@
   .header {
     padding-bottom: 152px;
 
-    position: relative;
+    /* position: relative; */
 
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .header-menu {
     width: 155px;
     justify-content: space-between;
+    
   }
 
   .header-menu .menu {
+
     margin: 0;
     padding: 0;
     padding-top: 134px;
@@ -28,16 +30,27 @@
     height: 100vh;
 
     z-index: 1;
-
-    /* visibility: visible; */
-
     position: absolute;
     top: 0;
     right: 0;
+    
+
+    /* visibility: visible; */
+
+    display: block;
 
     background-color: var(--color-bg-dark);
 
-    transition: all 1s;
+    transition: all 2s;
+    
+  }
+
+  .header-menu .menu.menu-hidden {
+    
+    /* visibility: hidden; */
+    /* z-index: -1; */
+    display: none;
+    right: -620px;
   }
 
   .header-menu .menu .menu-list {
@@ -56,11 +69,7 @@
     line-height: 73px;
   }
 
-  .header-menu .menu.menu-hidden {
-    right: -620px;
-    /* display: none; */
-    /* visibility: hidden; */
-  }
+ 
 
   .lang-slash {
     margin: 0 9px;
@@ -193,6 +202,8 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+
+    background: transparent;
   }
 
   .contacts-form__title {
@@ -200,5 +211,28 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 64px;
+    
+  }
+
+  .contacts-form__email,
+  .contacts-form__tel,
+  .contacts-form__message {
+    background-color: inherit;
+    border: 2px solid var(--color-gold);
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer .container {
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
   }
 }
